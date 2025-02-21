@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Business Card Directory</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: url('background.jpg') no-repeat center center/cover;
-            overflow: hidden;
-            flex-direction: column;
-        }
+ body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Changed from center to flex-start */
+    min-height: 100vh; /* Ensures content can expand */
+    background: url('background.jpg') no-repeat center center/cover;
+    background-attachment: fixed; /* Keeps background fixed */
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+    flex-direction: column;
+}
         .cards-container {
             display: flex;
             flex-wrap: wrap;
