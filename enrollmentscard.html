@@ -59,20 +59,20 @@
 </head>
 <body>
     <div class="card">
-        <img src="pprofile.png" alt="Profile Picture" class="profile-pic">
-        <div class="name">Jeanette Holland</div>
-        <div class="job-title">St Agnes CHS - Principal</div>
+        <img src="enrolprofile.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="name">Jessica Contogeorge</div>
+        <div class="job-title">St Agnes CHS - Enrolments & Attendance Officer</div>
         <div class="contact-info">
-            <p>Email: jholland@parra.catholic.edu.au</p>
+            <p>Email: jcontogeorge@parra.catholic.edu.au</p>
             <!-- <p>Mobile Phone: +61 438 954 871</p> -->
-            <p>Tele Phone: +02 8882 0700</p>
+            <p>Tele Phone: +02 8882 0704</p>
         </div>
         <button class="button" onclick="addToContacts()">Add to Contacts</button>
     </div>
 
     <script>
         function addToContacts() {
-            const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Jeanette Holland\nTITLE:St Agnes Principal\nEMAIL:jholland@parra.catholic.edu.au\nTEL;TYPE=WORK,VOICE:+61288820700\nTEL;\nEND:VCARD`;
+            const vCardData = `BEGIN:VCARD\nVERSION:3.0\nFN:Jessica Contogeorge\nTITLE:St Agnes Enrolments Officer\nEMAIL:jcontogeorge@parra.catholic.edu.au\nTEL;TYPE=WORK,VOICE:+61288820704\nTEL;\nEND:VCARD`;
             const blob = new Blob([vCardData], { type: 'text/vcard' });
             const a = document.createElement('a');
             a.href = URL.createObjectURL(blob);
